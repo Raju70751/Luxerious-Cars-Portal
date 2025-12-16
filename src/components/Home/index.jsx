@@ -13,7 +13,7 @@ const Home = () => {
 
     useEffect(() => {
         const data = async () => {
-            const response = await fetch('http://localhost:5000/api/cars');
+            const response = await fetch('https://luxerious-car-portal-backend-server.onrender.com/api/cars');
             const result = await response.json();
             setCars(result);
         };
